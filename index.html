@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spare-it</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Open+Sans:400,600,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8af80470b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/dashboard-styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body id="body">
+    <div class="dashboard-wrapper">
+        <div class="header">
+            <h1><span class="font-uppercase font-bold">Sorting Station</span> <small><i
+                        class="fa fa-chevron-right"></i></small> <span class="font-bold">Dining Hall</span></h1>
+        </div>
+        <div class="status">
+            <div class="badge badge-primary"><span class="indicator"></span> Live</div>
+        </div>
+        <div class="main-chart">
+            <div class="card">
+                <img src="images/main-chart.png" alt="" class="chart-light">
+                <img src="images/main-chart-dark-mode.png" alt="" class="chart-dark">
+            </div>
+        </div>
+        <div class="references">
+            <div class="references-list">
+                <div class="reference">
+                    <div class="category recycle">
+                        <i class="fa fa-recycle"></i>
+                    </div>
+                    <div class="reference-value">
+                        <p><span class="h1 font-xbold">96</span> LBS</p>
+                        <p>RECYCLE</p>
+                    </div>
+                </div>
+                <div class="reference">
+                    <div class="category compost">
+                        <i class="fa fa-leaf"></i>
+                    </div>
+                    <div class="reference-value">
+                        <p><span class="h1 font-xbold">78</span> LBS</p>
+                        <p>COMPOST</p>
+                    </div>
+                </div>
+                <div class="reference">
+                    <div class="category trash">
+                        <i class="fa fa-trash"></i>
+                    </div>
+                    <div class="reference-value">
+                        <p><span class="h1 font-xbold">50</span> LBS</p>
+                        <p>TRASH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="date text-center">
+            <p class="h1 font-uppercase font-bold">Today</p>
+            <p class="h5">Thursday, 30 Jan 2020</p>
+        </div>
+        <div class="total-waste">
+            <div class="card text-center">
+                <p class="waste-value"><span class="value font-xbold">224</span> LBS</p>
+                <p class="waste-label">TOTAL WASTE</p>
+            </div>
+        </div>
+        <div class="diversion-waste text-center">
+            <div class="card">
+                <p class="waste-value"><span class="value font-xbold">84</span> %</p>
+                <p class="waste-label">RECYCLED & COMPOST WASTE</p>
+            </div>
+        </div>
+        <div class="brand">
+            <p>Live waste monitoring by:</p>
+            <img class="logo" src="images/brand.svg" alt="">
+        </div>
+    </div>
+    <div class="theme-toggle" id="theme-toggle" onclick="toggleMode()">
+        <span class="dark-mode"><i class="fa fa-sun"></i> Change to light mode</span>
+        <span class="light-mode"><i class="fa fa-moon"></i> Change to dark mode</span>
+    </div>
+    <script>
+
+        function toggleMode() {
+            var bodyTag = document.getElementById("body");
+            bodyTag.classList.toggle("dark-theme");
+        }
+    </script>
+</body>
+
+</html>

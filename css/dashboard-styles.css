@@ -1,0 +1,194 @@
+@import "css-reset.css";
+@import "variables.css";
+@import "typography.css";
+@import "grid.css";
+
+body {
+  background-color: var(--background-light);
+  background-image: var(--background-grad-light);
+  background-size: cover;
+  color: var(--text-dark);
+}
+
+body.dark-theme {
+  background-color: var(--background-dark);
+  background-image: var(--background-grad-dark);
+  color: var(--text-light);
+}
+
+.card {
+  background: var(--card-light);
+  box-shadow: 0 2px 4px 0 rgba(10, 34, 48, 0.11);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  height: 100%;
+  position: relative;
+}
+
+.dark-theme .card {
+  background: var(--card-dark);
+}
+
+/* --- Live badge --- */
+
+.badge {
+  color: var(--text-light);
+  display: inline-block;
+  border-radius: var(--border-radius);
+  padding: 0.8rem 1.5rem 0.8rem 1rem;
+  font-size: 1.5rem;
+}
+
+.indicator {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--background-light);
+  border-radius: 50%;
+  margin: -0.2rem 0.5rem 0 0.25rem;
+  vertical-align: middle;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@media (min-width: 1700px) {
+  .badge {
+    padding: calc(.8rem + .5vw) calc(1.5rem + .5vw) calc(.8rem + .5vw) calc(1rem + .5vw);
+    font-size: calc(1.5rem + 1vw);
+  }
+
+  .indicator {
+    width: calc(.5rem + 1vw);
+    height: calc(.5rem + 1vw);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(10, 34, 48, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(10, 34, 48, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(10, 34, 48, 0);
+  }
+}
+
+.badge-primary {
+  background-color: var(--brand-primary);
+}
+
+/* --- Main chart references --- */
+
+.category {
+  display: block;
+  float: left;
+  width: 5rem;
+  color: var(--text-light);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  line-height: 5.8rem;
+  font-size: 2.5rem;
+}
+
+.category.recycle {
+  background-image: url("/images/hexagon-recycle.svg");
+}
+
+.category.compost {
+  background-image: url("/images/hexagon-compost.svg");
+}
+
+.category.trash {
+  background-image: url("/images/hexagon-trash.svg");
+}
+
+.reference-value {
+  padding-left: 7rem;
+  padding-top: 0.8rem;
+}
+
+@media (min-width: 1700px) {
+  .category {
+    font-size: calc(2.5rem + 2vw);
+    line-height: calc(5.8rem + 2.3vw);
+    width: calc(5rem + 2vw);
+  }
+
+  .reference-value {
+    padding-top: calc(0.8rem - 0.5vw);
+    padding-left: calc(7rem + 2.5vw);
+  }
+}
+
+/* --- Bottom row --- */
+
+.total-waste .card,
+.diversion-waste .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.waste-value {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: var(--font-headings);
+}
+
+.waste-value .value {
+  font-size: 3.5rem;
+}
+
+.waste-label {
+  font-size: 1.25em;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 90%;
+  padding-top: 2.5rem;
+}
+
+/* -- theme toggle -- */
+
+
+.theme-toggle {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.theme-toggle .dark-mode {
+  display: none;
+}
+
+.dark-theme .dark-mode {
+  display: block;
+}
+
+.dark-theme .light-mode {
+  display: none;
+}
+
+.chart-dark {
+  display: none;
+}
+
+.dark-theme .chart-dark {
+  display: block;
+}
+
+.dark-theme .chart-light {
+  display: none;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="96px" viewBox="0 0 84 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Polygon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="station-dashboard" transform="translate(-1322.000000, -260.000000)" fill="#2282A5">
+            <g id="Group-9" transform="translate(1322.000000, 260.000000)">
+                <path d="M46.8497423,1.32722047 L79.1502577,20.3739662 C82.1512887,22.1435935 84,25.4139996 84,28.9532542 L84,67.0467458 C84,70.5860004 82.1512887,73.8564065 79.1502577,75.6260338 L46.8497423,94.6727795 C43.8487113,96.4424068 40.1512887,96.4424068 37.1502577,94.6727795 L4.84974226,75.6260338 C1.84871131,73.8564065 0,70.5860004 0,67.0467458 L0,28.9532542 C0,25.4139996 1.84871131,22.1435935 4.84974226,20.3739662 L37.1502577,1.32722047 C40.1512887,-0.442406823 43.8487113,-0.442406823 46.8497423,1.32722047 Z" id="Polygon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

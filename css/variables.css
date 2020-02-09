@@ -1,0 +1,25 @@
+:root {
+    --brand-primary: #2294A5;
+    --gradient-p1: #32936F;
+    --gradient-p2: #1AA7B0;
+    --gradient-p3: #2274A5;
+    --text-dark: #1A173B;
+    --text-light: #ffffff;
+    --recycle: #2282A5;
+    --compost: #BADB55;
+    --trash: #ADADA2;
+    --success: #2E7819;
+    --danger: #D40000;
+
+    --background-light: #ffffff;
+    --background-dark: #0A2230;
+    --background-grad-light: linear-gradient(180deg, #FFFFFF 79%, #D9E8EF 100%);
+    --background-grad-dark: linear-gradient(180deg, #0A2230 79%, #0A2230 100%);
+
+    --card-light: #fff;
+    --card-dark: rgba(255,255,255,.07);
+    --border-radius: 4px;
+
+    --font-headings: "Montserrat", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+}
