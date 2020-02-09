@@ -99,15 +99,15 @@ body.dark-theme {
 }
 
 .category.recycle {
-  background-image: url("/images/hexagon-recycle.svg");
+  background-image: url("../images/hexagon-recycle.svg");
 }
 
 .category.compost {
-  background-image: url("/images/hexagon-compost.svg");
+  background-image: url("../images/hexagon-compost.svg");
 }
 
 .category.trash {
-  background-image: url("/images/hexagon-trash.svg");
+  background-image: url("../hexagon-trash.svg");
 }
 
 .reference-value {
